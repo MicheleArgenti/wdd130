@@ -1,4 +1,6 @@
-:root {}
+:root {
+    --border-color: 1px solid #000;
+}
 
 * {
     margin: 0;
@@ -33,7 +35,7 @@ h2 {
     bottom: 25px;
     left: 15px;
     background: radial-gradient(#eee, #11aa11);
-    border: 1px solid #000;
+    border: var(--border-color);
     padding: 0.65rem;
     box-shadow: 0 0 30px #111;
     opacity: 0.9;
@@ -49,7 +51,7 @@ footer {
     position: fixed;
     bottom: 0;
     margin: 1rem;
-    border-top: 1px solid #000;
+    border-top: var(--border-color);
     padding: 0.5rem;
     color: navy;
     font-weight: 700;
