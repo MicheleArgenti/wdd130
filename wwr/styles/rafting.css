@@ -20,13 +20,26 @@ a {
     line-height: 1.6;
 }
 
+header {
+    display: flex;
+    align-items: center;
+}
+
 header img {
     width: 200px;
     height: auto;
+    margin-left: 20%;
+    margin-right: 10%;
 }
 
 header nav a {
     text-decoration: none;
+    border: 1px solid black;
+    padding: 10px 25px 10px 25px;
+}
+
+header nav a:hover {
+    background-color: #F3F1E9;
 }
 
 .hero {
@@ -54,11 +67,11 @@ header nav a {
 
 .hero article {
     position: absolute;
-    bottom: 15px;
+    bottom: 50%;
+    left: 20px;
     right: 20px;
-    left: 50px;
     background-color: rgba(255, 255, 255, 0.8);
-    padding: 50px;
+    padding: 10px;
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
@@ -79,6 +92,31 @@ section {
 section h2 {
     font-family: 'Anton', sans-serif;
     color: var(--primary-color);
+}
+
+.images .image-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.images .image-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.images .image-item img {
+    height: 150px;
+    width: auto;
+}
+
+.images .image-item figcaption {
+    margin-top: 8px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+    color: var(--accent-1-color);
 }
 
 footer {
