@@ -22,8 +22,17 @@ a {
 }
 
 header {
-    display: flex;
+    display: grid;
+    grid-template-columns: auto 1fr;
     align-items: center;
+    gap: 25%;
+    padding: 10px 10px;
+}
+
+header nav {
+    display: flex;
+    gap: 15px;
+    justify-content: flex-start;
 }
 
 header img {
@@ -133,8 +142,19 @@ section {
 footer {
     background-color: var(--primary-color);
     color: darkblue;
-    text-align: center;
-    padding: 10px;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 25px;
 }
 
 footer .social-links a {
@@ -142,6 +162,6 @@ footer .social-links a {
 }
 
 footer .social-links img {
-    width: 20px;
-    margin: 0 10px;
+    width: 30px;
+    height: auto;
 }
