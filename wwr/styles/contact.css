@@ -77,7 +77,7 @@ textarea {
 }
 
 label {
-    text-align: right;
+    text-align: center;
     padding-right: 1rem;
 }
 
@@ -111,15 +111,42 @@ iframe {
     padding: 20px;
 }
 
-@media (max-width: 768px) {
-    .contact-container {
-        flex-direction: column;
-    }
+.form-items {
+    display: grid;
+    align-items: center;
 }
 
+.column2 {
+    grid-template-columns: 1fr 1fr;
+}
 
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 8px;
+}
 
+.radio-option {
+    display: flex;
+    gap: 8px;
+}
 
+input[type="radio"] {
+    margin: 0;
+    width: 18px;
+    height: 18px;
+}
+
+input[type="checkbox"] {
+    width: 18px;
+    height: 18px;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
 
 button {
     margin: 1rem;
@@ -129,6 +156,7 @@ button {
     border-radius: 0.5rem;
     padding: 0.75rem;
     font-size: 1.2rem;
+    width: 25%;
 }
 
 button:hover {

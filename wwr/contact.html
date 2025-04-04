@@ -53,33 +53,48 @@
                 <h2>Contact Us</h2>
                 <form>
                     <fieldset>
-                        <label for="name">Name:</label>
-                        <input type="text" id="name" name="name">
-                        <label for="email">Email:</label>
-                        <input type="text" id="email" name="email">
-                        <label for="purpose">Purpose of Message:</label>
-                        <div class="radio-option">
-                            <input type="radio" id="purpose-inquiry" name="message-purpose" value="General Inquiry"
-                                required checked>
-                            <label for="purpose-inquiry">General Inquiry</label>
+                        <div class="form-items column2">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name">
                         </div>
-                        <div class="radio-option">
-                            <input type="radio" id="purpose-reservation" name="message-purpose"
-                                value="Reservation Question">
-                            <label for="purpose-reservation">Reservation Question</label>
+                        <div class="form-items column2">
+                            <label for="email">Email:</label>
+                            <input type="text" id="email" name="email">
                         </div>
-                        <div class="radio-option">
-                            <input type="radio" id="purpose-suggestion" name="message-purpose"
-                                value="Website Suggestion">
-                            <label for="purpose-suggestion">Website Suggestion</label>
+                        <div class="form-items column2">
+                            <label for="purpose">Purpose of Message:</label>
+                            <div class="radio-group">
+                                <div class="radio-option">
+                                    <input type="radio" id="purpose-inquiry" name="message-purpose"
+                                        value="General Inquiry" required checked>
+                                    <label for="purpose-inquiry">General Inquiry</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="purpose-reservation" name="message-purpose"
+                                        value="Reservation Question">
+                                    <label for="purpose-reservation">Reservation Question</label>
+                                </div>
+                                <div class="radio-option">
+                                    <input type="radio" id="purpose-suggestion" name="message-purpose"
+                                        value="Website Suggestion">
+                                    <label for="purpose-suggestion">Website Suggestion</label>
+                                </div>
+                            </div>
                         </div>
-                        <label for="message">Message:</label>
-                        <textarea name="message" id="message" row="3" placeholder="Ask us everything"></textarea>
+                        <div class="form-items column2">
+                            <label for="message">Message:</label>
+                            <textarea name="message" id="message" row="3" placeholder="Ask us everything"></textarea>
+                        </div>
+                        <div class="form-items column2">
+                            <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+                            <input type="checkbox" name="subscribe" id="subscribe">
+                        </div>
                     </fieldset>
-                    <button type="submit">Submit Form</button>
+                    <div class="submit">
+                        <button type="submit">Submit Form</button>
+                    </div>
                 </form>
             </div>
-        </div>
         </div>
     </main>
     <footer>
