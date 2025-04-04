@@ -366,3 +366,8 @@ footer .social-links img {
     width: 30px;
     height: auto;
 }
+
+.wairframe {
+    display: flex;
+    justify-content: center;
+}
