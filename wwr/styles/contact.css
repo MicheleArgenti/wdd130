@@ -36,6 +36,7 @@ header nav a:hover {
 }
 
 main {
+    padding-bottom: 10px;
     background-color: aqua;
 }
 
@@ -71,6 +72,59 @@ main h1 {
 iframe {
     width: 400px;
     height: 250px;
+}
+
+.employees h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+}
+
+.employee-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+}
+
+.employee-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    width: 100%;
+}
+
+.employee-card:hover {
+    transform: translateY(-5px);
+}
+
+.employee-card img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.employee-info {
+    padding: 20px;
+}
+
+.employee-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.employee-info p {
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
 }
 
 .contact-form h2 {
