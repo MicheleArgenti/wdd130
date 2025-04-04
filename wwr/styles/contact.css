@@ -187,10 +187,15 @@ textarea {
     align-items: center;
 }
 
+.form-items p {
+    text-align: center;
+    padding-right: 1rem;
+    font-family: Roboto, Arial, sans-serif;
+}
+
 .column2 {
     grid-template-columns: 1fr 1fr;
 }
-
 
 .radio-group {
     display: flex;
