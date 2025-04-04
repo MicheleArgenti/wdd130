@@ -35,7 +35,45 @@ header nav a:hover {
     background-color: #F3F1E9;
 }
 
+main {
+    background-color: aqua;
+}
+
 main h1 {
+    margin: 1rem;
+    font-size: 2.5rem;
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+}
+
+.company-info {
+    display: grid;
+    place-items: center;
+}
+
+.address h2,
+.numbers h2 {
+    margin: 1rem;
+    font-size: 1.5rem;
+    color: navy;
+    text-align: center;
+    font-weight: bold;
+}
+
+.address p,
+.numbers p {
+    font-size: 1rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+iframe {
+    width: 400px;
+    height: 250px;
+}
+
+.contact-form h2 {
     margin: 1rem;
     font-size: 1.5rem;
     color: navy;
@@ -62,12 +100,6 @@ fieldset {
     padding: 1rem;
 }
 
-legend {
-    padding: 0.5rem;
-    color: navy;
-    font-size: 1.3rem;
-}
-
 label,
 input,
 button,
@@ -88,26 +120,11 @@ textarea {
     font-size: 1.1rem;
 }
 
-iframe {
-    width: 400px;
-    height: 250px;
-}
-
 .contact-container {
     display: flex;
     gap: 40px;
     max-width: 1200px;
     margin: 0 auto;
-    padding: 20px;
-}
-
-.company-info {
-    flex: 1;
-    padding: 20px;
-}
-
-.contact-form {
-    flex: 1;
     padding: 20px;
 }
 
@@ -119,6 +136,7 @@ iframe {
 .column2 {
     grid-template-columns: 1fr 1fr;
 }
+
 
 .radio-group {
     display: flex;
@@ -162,9 +180,6 @@ button {
 button:hover {
     background-color: darkgreen;
 }
-
-
-
 
 
 
