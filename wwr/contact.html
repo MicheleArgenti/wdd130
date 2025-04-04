@@ -53,13 +53,28 @@
                 <h2>Contact Us</h2>
                 <form>
                     <fieldset>
-                        <legend>Company Information</legend>
-                        <label for="address">Address:</label>
-                        <input type="text" id="address" name="address">
-                        <label for="phone-number">Phone Number(s)</label>
-                        <input type="number" id="phone-number" name="phone-number">
-                        <label for="email">Email</label>
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name">
+                        <label for="email">Email:</label>
                         <input type="text" id="email" name="email">
+                        <label for="purpose">Purpose of Message:</label>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-inquiry" name="message-purpose" value="General Inquiry"
+                                required checked>
+                            <label for="purpose-inquiry">General Inquiry</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-reservation" name="message-purpose"
+                                value="Reservation Question">
+                            <label for="purpose-reservation">Reservation Question</label>
+                        </div>
+                        <div class="radio-option">
+                            <input type="radio" id="purpose-suggestion" name="message-purpose"
+                                value="Website Suggestion">
+                            <label for="purpose-suggestion">Website Suggestion</label>
+                        </div>
+                        <label for="message">Message:</label>
+                        <textarea name="message" id="message" row="3" placeholder="Ask us everything"></textarea>
                     </fieldset>
                     <button type="submit">Submit Form</button>
                 </form>
