@@ -175,6 +175,20 @@ iframe {
     height: 250px;
 }
 
+.employee-card figcaption {
+    padding: 20px;
+    margin: 0 0 5px 0;
+    font-size: 1.3rem;
+    color: #222;
+}
+
+.employee-card p {
+    padding: 20px;
+    margin: 0;
+    color: #666;
+    font-size: 1rem;
+}
+
 .employees h2 {
     margin: 1rem;
     font-size: 1.5rem;
@@ -209,22 +223,6 @@ iframe {
     height: auto;
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.employee-info {
-    padding: 20px;
-}
-
-.employee-info h3 {
-    margin: 0 0 5px 0;
-    font-size: 1.3rem;
-    color: #222;
-}
-
-.employee-info p {
-    margin: 0;
-    color: #666;
-    font-size: 1rem;
 }
 
 .contact-form h2 {
