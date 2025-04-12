@@ -521,22 +521,63 @@ button:hover {
     transition: background-color 0.3s;
 }
 
+.newsletter {
+    max-width: 500px;
+    margin: 0 auto;
+}
 
+.newsletter h2 {
+    color: #0066cc;
+    margin-bottom: 15px;
+}
 
+.newsletter p {
+    color: #4d4d4d;
+    margin-bottom: 30px;
+}
 
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
 
+.form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
 
+.newsletter-form input {
+    padding: 12px 15px;
+    border: 2px solid #cce0ff;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: all 0.3s;
+}
 
+.newsletter-form input:focus {
+    border-color: #0066cc;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 102, 204, 0.2);
+}
 
+.newsletter-form button {
+    padding: 12px 25px;
+    background-color: #0066cc;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
 
-
-
-
-
-
-
-
-
+.newsletter-form button:hover {
+    background-color: #004d99;
+}
 
 
 
