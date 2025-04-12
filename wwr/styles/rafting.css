@@ -85,6 +85,7 @@ header nav a:hover {
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
+    text-align: center;
 }
 
 .hero article img {
@@ -92,6 +93,19 @@ header nav a:hover {
     margin-left: 15px;
     width: 185px;
     height: auto;
+}
+
+.hero article a {
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    font-size: bold;
+    background-color: lightblue;
+    border-radius: 10px;
+}
+
+.hero article a:visited {
+    color: black
 }
 
 section {
@@ -336,6 +350,111 @@ button {
 button:hover {
     background-color: darkgreen;
 }
+
+.cards {
+    padding: 25px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    width: 100%;
+    gap: 30px;
+    justify-items: center;
+}
+
+.card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    max-width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+.custom-list-1 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-list-1 li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.custom-list-1 li:nth-child(1)::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+.custom-list-1 li:nth-child(2)::before {
+    content: "⚠️";
+    position: absolute;
+    left: 0;
+}
+
+.custom-list-1 li:nth-child(3)::before {
+    content: "🛟";
+    position: absolute;
+    left: 0;
+}
+
+.card a {
+    border: 1px solid black;
+    padding: 8px;
+    text-decoration: none;
+    font-size: bold;
+    border-radius: 10px;
+    margin-top: auto;
+    margin: 15px;
+    margin-bottom: 25px;
+    font-size: 20px;
+}
+
+.card img {
+    display: block;
+    width: 100%;
+    height: auto;
+    padding-bottom: 20px;
+}
+
+.card h3 {
+    font-size: 30px;
+}
+
+.custom-list-2 {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.custom-list-2 li {
+    padding-left: 1.5em;
+    position: relative;
+    margin-bottom: 0.5em;
+}
+
+.custom-list-2 li:nth-child(1)::before {
+    content: "✅";
+    position: absolute;
+    left: 0;
+}
+
+.custom-list-2 li:nth-child(2)::before {
+    content: "🎁";
+    position: absolute;
+    left: 0;
+}
+
+
+
+
+
+
+
+
 
 footer {
     background-color: var(--primary-color);

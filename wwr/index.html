@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page | Rafting Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta name="author" content="Michele Argenti">
+    <meta name="description" content="Michele Argenti, WDD130, Rafting Website Home Page">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+    <header>
+        <img src="./images/logo.jpg" alt="Logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div class="hero">
+            <img src="./images/hero.jpg" alt="Hero">
+            <h1>Rapid Rush Adventures</h1>
+            <article>
+                <p>Do you want to have fun competing againts the water?<br>
+                    Hurry! 🚣‍♂️ Spots Fill Fast - Book Now!</p>
+                <a href="contact.html" class="book">Book With Us</a>
+            </article>
+        </div>
+        <div class="cards">
+            <div class="card">
+                <h3>Your Safety is Our #1 Priority</h3>
+                <ul class="custom-list-1">
+                    <li>100% Certified Guides (WRT/CPR/First Aid)</li>
+                    <li><strong>0</strong> Major Incidents in 10+ Years</li>
+                    <li>Top-Grade Equipment (Replace Annually)</li>
+                </ul>
+                <img src="images/img-1.jpg" alt="Safety">
+            </div>
+            <div class="card">
+                <h3>Learn more about our Trips</h3>
+                <img src="images/happy.jpg" alt="Happy">
+                <a href="trips.html">Trips</a>
+            </div>
+            <div class="card">
+                <h3>⏳ LAST-MINUTE DEAL!</h3>
+                <p>Book within <span id="countdown">24:00:00</span> and get:</p>
+                <ul class="custom-list-2">
+                    <li>20% OFF all trips</li>
+                    <li>Free waterproof phone case</li>
+                </ul>
+                <img src="images/img-6.jpeg" alt="Deal">
+                <a href="contact.html">Claim Deal Now</a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>© 2025, Rapid Rush Adventures, Michele Argenti</p>
+        <nav class="social-links">
+            <a href="https://facebook.com">
+                <img src="./images/facebook.webp" alt="Facebook">
+            </a>
+            <a href="https://instagram.com">
+                <img src="./images/instragram.webp" alt="Instagram">
+            </a>
+            <a href="https://x.com">
+                <img src="./images/x.webp" alt="X">
+            </a>
+        </nav>
+    </footer>
+</body>
+
+<script>
+    const targetTime = new Date().getTime() + 24 * 60 * 60 * 1000;
+    function updateCountdown() {
+        const now = new Date().getTime();
+        const timeLeft = targetTime - now;
+        const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+        document.getElementById('countdown').textContent =
+            `${hours.toString().padStart(2, '0')}:${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+        if (timeLeft <= 0) {
+            document.getElementById('countdown').textContent = "DEAL EXPIRED!";
+        }
+    }
+    setInterval(updateCountdown, 1000);
+    updateCountdown();
+</script>
+
+</html>
